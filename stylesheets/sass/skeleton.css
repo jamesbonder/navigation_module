@@ -1,0 +1,456 @@
+/*
+ * SASS/SCSS/Compass Transcription of Skeleton Responsive Grid
+ * originally authored by Dave Gamache. This translation offers
+ * mixins that support fluid and as well as fixed grids to supplement
+ * the work that Dave Gamache has done.
+ * @author Dennis Thompson <http://www.atomicpages.net>
+ * @copyright Copyright (c) 2013 AtomicPages LLC
+ * @license MIT
+ * @version 1.5.1 */
+/* BASE GRID
+ * ------------------------------------------------ */
+/* line 21, ../../sass/sass/skeleton.sass */
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 26, ../../sass/sass/skeleton.sass */
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  position: relative;
+  /* Nested Column Classes */
+}
+/* line 32, ../../sass/sass/skeleton.sass */
+.container .column.alpha,
+.container .columns.alpha {
+  margin-left: 0;
+}
+/* line 34, ../../sass/sass/skeleton.sass */
+.container .column.omega,
+.container .columns.omega {
+  margin-right: 0;
+}
+
+/* line 37, ../../sass/sass/skeleton.sass */
+.row {
+  margin-bottom: 20px;
+}
+
+/* line 40, ../../sass/sass/_dependencies.sass */
+.container .column,
+.container .columns {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* The Grid */
+/* line 49, ../../sass/sass/_dependencies.sass */
+.container .one.column,
+.container .one.columns {
+  width: 40px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .two.columns {
+  width: 100px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .three.columns {
+  width: 160px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .four.columns {
+  width: 220px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .five.columns {
+  width: 280px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .six.columns {
+  width: 340px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .seven.columns {
+  width: 400px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .eight.columns {
+  width: 460px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .nine.columns {
+  width: 520px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .ten.columns {
+  width: 580px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .eleven.columns {
+  width: 640px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .twelve.columns {
+  width: 700px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .thirteen.columns {
+  width: 760px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .fourteen.columns {
+  width: 820px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .fifteen.columns {
+  width: 880px;
+}
+/* line 53, ../../sass/sass/_dependencies.sass */
+.container .sixteen.columns {
+  width: 940px;
+}
+/* line 55, ../../sass/sass/_dependencies.sass */
+.container .one-third.column {
+  width: 300px;
+}
+/* line 57, ../../sass/sass/_dependencies.sass */
+.container .two-thirds.column {
+  width: 620px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-one {
+  padding-left: 60px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-two {
+  padding-left: 120px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-three {
+  padding-left: 180px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-four {
+  padding-left: 240px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-five {
+  padding-left: 300px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-six {
+  padding-left: 360px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-seven {
+  padding-left: 420px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-eight {
+  padding-left: 480px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-nine {
+  padding-left: 540px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-ten {
+  padding-left: 600px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-eleven {
+  padding-left: 660px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-twelve {
+  padding-left: 720px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-thirteen {
+  padding-left: 780px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-fourteen {
+  padding-left: 840px;
+}
+/* line 69, ../../sass/sass/_dependencies.sass */
+.container .offset-by-fifteen {
+  padding-left: 900px;
+}
+
+/* TABLET (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 46, ../../sass/sass/skeleton.sass */
+  .container {
+    width: 768px;
+  }
+  /* line 49, ../../sass/sass/skeleton.sass */
+  .container .column.alpha, .container .columns.alpha {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  /* line 53, ../../sass/sass/skeleton.sass */
+  .container .column.omega, .container .columns.omega {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  /* line 57, ../../sass/sass/skeleton.sass */
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 40, ../../sass/sass/_dependencies.sass */
+  .container .column,
+  .container .columns {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* The Grid */
+  /* line 49, ../../sass/sass/_dependencies.sass */
+  .container .one.column,
+  .container .one.columns {
+    width: 28px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .two.columns {
+    width: 76px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .three.columns {
+    width: 124px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .four.columns {
+    width: 172px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .five.columns {
+    width: 220px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .six.columns {
+    width: 268px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .seven.columns {
+    width: 316px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .eight.columns {
+    width: 364px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .nine.columns {
+    width: 412px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .ten.columns {
+    width: 460px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .eleven.columns {
+    width: 508px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .twelve.columns {
+    width: 556px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .thirteen.columns {
+    width: 604px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .fourteen.columns {
+    width: 652px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .fifteen.columns {
+    width: 700px;
+  }
+  /* line 53, ../../sass/sass/_dependencies.sass */
+  .container .sixteen.columns {
+    width: 748px;
+  }
+  /* line 55, ../../sass/sass/_dependencies.sass */
+  .container .one-third.column {
+    width: 236px;
+  }
+  /* line 57, ../../sass/sass/_dependencies.sass */
+  .container .two-thirds.column {
+    width: 492px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-one {
+    padding-left: 48px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-two {
+    padding-left: 96px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-three {
+    padding-left: 144px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-four {
+    padding-left: 192px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-five {
+    padding-left: 240px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-six {
+    padding-left: 288px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-seven {
+    padding-left: 336px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-eight {
+    padding-left: 384px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-nine {
+    padding-left: 432px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-ten {
+    padding-left: 480px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-eleven {
+    padding-left: 528px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-twelve {
+    padding-left: 576px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-thirteen {
+    padding-left: 624px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-fourteen {
+    padding-left: 672px;
+  }
+  /* line 69, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-fifteen {
+    padding-left: 720px;
+  }
+}
+/*  MOBILE (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (max-width: 767px) {
+  /* line 74, ../../sass/sass/_dependencies.sass */
+  .container {
+    width: 300px;
+  }
+  /* line 76, ../../sass/sass/_dependencies.sass */
+  .container .column,
+  .container .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 83, ../../sass/sass/_dependencies.sass */
+  .container .one.column {
+    width: 300px;
+  }
+  /* line 112, ../../sass/sass/_dependencies.sass */
+  .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+    width: 300px;
+  }
+  /* line 90, ../../sass/sass/_dependencies.sass */
+  .container .one-third.column {
+    width: 300px;
+  }
+  /* line 92, ../../sass/sass/_dependencies.sass */
+  .container .two-third.column {
+    width: 300px;
+  }
+  /* line 112, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* MOBILE (LANDSCAPE)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 74, ../../sass/sass/_dependencies.sass */
+  .container {
+    width: 420px;
+  }
+  /* line 76, ../../sass/sass/_dependencies.sass */
+  .container .column,
+  .container .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 83, ../../sass/sass/_dependencies.sass */
+  .container .one.column {
+    width: 420px;
+  }
+  /* line 112, ../../sass/sass/_dependencies.sass */
+  .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+    width: 420px;
+  }
+  /* line 90, ../../sass/sass/_dependencies.sass */
+  .container .one-third.column {
+    width: 420px;
+  }
+  /* line 92, ../../sass/sass/_dependencies.sass */
+  .container .two-third.column {
+    width: 420px;
+  }
+  /* line 112, ../../sass/sass/_dependencies.sass */
+  .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* CLEARING
+ * ------------------------------------------------ */
+/* line 77, ../../sass/sass/skeleton.sass */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 84, ../../sass/sass/skeleton.sass */
+.clearfix, .row {
+  zoom: 1;
+}
+/* line 86, ../../sass/sass/skeleton.sass */
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* line 93, ../../sass/sass/skeleton.sass */
+.clearfix:after, .row:after {
+  clear: both;
+}
+
+/* line 96, ../../sass/sass/skeleton.sass */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

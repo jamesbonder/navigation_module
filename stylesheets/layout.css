@@ -1,0 +1,436 @@
+/**
+ * Boilerplate for responsive webpages.
+ * Created by James Bonder. This boilerplate offers
+ * mixins that support fluid and as well as fixed
+ * grids based on the Skeleton framework.
+ */
+/* SASS FUNCTIONS
+ * ------------------------------------------------ */
+/* Box sizing for browser compatability
+ * ------------------------------------------------ */
+/* line 20, ../sass/scss/layout.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* SITE STYLES
+ * ------------------------------------------------ */
+/*/ BANDS 
+ * ------------------------------------------------ */
+/* line 31, ../sass/scss/layout.scss */
+.band.header {
+  border-top: 5px solid #303030;
+  background-color: #fff;
+  height: 68px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+/* line 42, ../sass/scss/layout.scss */
+section.first {
+  margin: 0 auto;
+  height: 97%;
+  width: 100%;
+  background-color: #85c3af;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 53, ../sass/scss/layout.scss */
+section.first h1 {
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+  top: 89%;
+  text-align: center;
+  font-family: arial;
+  font-size: 40px;
+  background-color: white;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 67, ../sass/scss/layout.scss */
+section.second {
+  border-top: 2px solid white;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: #a29281;
+  background-size: cover;
+}
+
+/* line 76, ../sass/scss/layout.scss */
+section.second h1 {
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+  top: 89%;
+  text-align: center;
+  font-family: arial;
+  font-size: 40px;
+  background-color: white;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* HEADING
+ *------------------------------------------------- */
+/* line 96, ../sass/scss/layout.scss */
+.menuwrap {
+  text-align: center;
+}
+
+/* line 100, ../sass/scss/layout.scss */
+.nav {
+  line-height: 63px;
+  color: #474747;
+  font-size: 14px;
+}
+
+/* line 106, ../sass/scss/layout.scss */
+.nav a {
+  text-decoration: none;
+}
+
+/* line 110, ../sass/scss/layout.scss */
+.nav p {
+  font-family: helvetica;
+  color: #6B6B6B;
+  font-size: 14px;
+  line-height: 70px;
+}
+
+/* line 117, ../sass/scss/layout.scss */
+.nav p:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 122, ../sass/scss/layout.scss */
+.nav.menu1 {
+  -webkit-box-flex: 4;
+  flex: 4;
+  background: #303030;
+  max-width: 100px;
+  min-width: 80px;
+  height: 63px;
+  display: none;
+}
+
+/* line 132, ../sass/scss/layout.scss */
+.nav.menu2 {
+  flex: 4;
+  background-color: white;
+  border-right: 1px solid #F0F0F0;
+  border-left: 1px solid #f0f0f0;
+  min-width: 70px;
+  height: 63px;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 145, ../sass/scss/layout.scss */
+.nav.menu2:hover {
+  background-color: #303030;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-right: 1px solid #303030;
+}
+
+/* line 154, ../sass/scss/layout.scss */
+.nav.menu3:hover {
+  background-color: #303030;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 162, ../sass/scss/layout.scss */
+.nav.menu4:hover {
+  background-color: #303030;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 170, ../sass/scss/layout.scss */
+.nav.menu5:hover {
+  background-color: #303030;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 178, ../sass/scss/layout.scss */
+.nav.menu3 {
+  flex: 4;
+  background-color: white;
+  border-right: 1px solid #F0F0F0;
+  min-width: 70px;
+  height: 63px;
+}
+
+/* line 186, ../sass/scss/layout.scss */
+.nav.menu4 {
+  flex: 4;
+  background-color: white;
+  border-right: 1px solid #F0F0F0;
+  min-width: 70px;
+  height: 63px;
+}
+
+/* line 194, ../sass/scss/layout.scss */
+.nav.menu5 {
+  flex: 4;
+  background-color: white;
+  border-right: 1px solid #F0F0F0;
+  min-width: 70px;
+  height: 63px;
+}
+
+/* line 202, ../sass/scss/layout.scss */
+.nav.menu6 {
+  flex: 5;
+  background-color: white;
+}
+
+/* line 207, ../sass/scss/layout.scss */
+nav.menu {
+  display: -webkit-box;
+  display: flex;
+  height: 62px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 215, ../sass/scss/layout.scss */
+.main.content {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* NAVIGATION
+ *---------------------------------------------------- */
+/* Footer
+ *---------------------------------------------------- */
+/* line 227, ../sass/scss/layout.scss */
+.band.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+}
+
+/* line 236, ../sass/scss/layout.scss */
+.footer article.eight.columns p {
+  color: #fff;
+  padding-top: 22px;
+}
+
+/* line 241, ../sass/scss/layout.scss */
+.footer section.eight.columns p {
+  color: #fff;
+  padding-top: 22px;
+}
+
+/* line 246, ../sass/scss/layout.scss */
+.footer section.eight.columns {
+  float: right;
+  text-align: right;
+}
+
+/* line 251, ../sass/scss/layout.scss */
+.footer section.eight.columns a {
+  text-decoration: none;
+}
+
+/* OTHER PAGE STYLES
+ * ------------------------------------------------ */
+/* line 259, ../sass/scss/layout.scss */
+html {
+  height: 100%;
+}
+
+/* line 260, ../sass/scss/layout.scss */
+body {
+  height: 100%;
+}
+
+/* TEXT STYLING
+ *------------------------------------------------- */
+/* line 270, ../sass/scss/layout.scss */
+h3 {
+  font-family: helvetica;
+}
+
+/* MEDIA QUERIES 
+ * ------------------------------------------------ */
+@media only screen and (max-width: 960px) {
+  /* line 278, ../sass/scss/layout.scss */
+  .nav.menu1 {
+    display: block;
+  }
+
+  /* line 282, ../sass/scss/layout.scss */
+  .nav.menu2 {
+    max-width: 120px;
+  }
+
+  /* line 286, ../sass/scss/layout.scss */
+  .nav.menu3 {
+    max-width: 120px;
+  }
+
+  /* line 290, ../sass/scss/layout.scss */
+  .nav.menu4 {
+    max-width: 120px;
+  }
+
+  /* line 294, ../sass/scss/layout.scss */
+  .nav.menu5 {
+    max-width: 120px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  /* line 300, ../sass/scss/layout.scss */
+  section.third h1 {
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width: 865px) {
+  /* line 306, ../sass/scss/layout.scss */
+  section.first h1 {
+    font-size: 30px;
+  }
+
+  /* line 310, ../sass/scss/layout.scss */
+  section.second h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 316, ../sass/scss/layout.scss */
+  section.second {
+    background-image: url(http://i.imgur.com/qIS61T2.jpg);
+    background-image: cover;
+  }
+
+  /* line 321, ../sass/scss/layout.scss */
+  section.third h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /* line 327, ../sass/scss/layout.scss */
+  section.first h1 {
+    font-size: 25px;
+  }
+
+  /* line 331, ../sass/scss/layout.scss */
+  section.second h1 {
+    font-size: 23px;
+  }
+
+  /* line 335, ../sass/scss/layout.scss */
+  section.third h1 {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  /* line 341, ../sass/scss/layout.scss */
+  section.first h1 {
+    font-size: 17px;
+  }
+
+  /* line 345, ../sass/scss/layout.scss */
+  section.second h1 {
+    font-size: 15px;
+  }
+
+  /* line 349, ../sass/scss/layout.scss */
+  section.third h1 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  /* line 355, ../sass/scss/layout.scss */
+  section.second {
+    background-image: url(http://i.imgur.com/9gy7887.jpg);
+    background-image: cover;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 362, ../sass/scss/layout.scss */
+  section.second {
+    background-image: url(http://i.imgur.com/VU8tlQC.jpg);
+    background-image: cover;
+  }
+}
+@media only screen and (max-width: 750px) {
+  /* line 369, ../sass/scss/layout.scss */
+  section.third {
+    background-image: url(http://i.imgur.com/qIS61T2.jpg);
+    background-image: cover;
+  }
+}
+@media only screen and (min-height: 750px) {
+  /* line 376, ../sass/scss/layout.scss */
+  .wrapper.top {
+    height: 96.5%;
+  }
+}
+/* Smaller than standard */
+/* Tablet Portrait size to standard (devices and browsers) */
+@media only screen and (max-width: 480px) {
+  /* line 393, ../sass/scss/layout.scss */
+  nav.menu {
+    width: 100%;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 401, ../sass/scss/layout.scss */
+  select {
+    width: 90%;
+  }
+
+  /* line 405, ../sass/scss/layout.scss */
+  .two.columns {
+    display: none;
+  }
+
+  /* line 409, ../sass/scss/layout.scss */
+  .footer article.eight.columns {
+    text-align: center;
+  }
+
+  /* line 413, ../sass/scss/layout.scss */
+  .footer section.eight.columns {
+    text-align: center;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 960px) {
+  /* line 431, ../sass/scss/layout.scss */
+  nav.menu {
+    width: 100%;
+  }
+}

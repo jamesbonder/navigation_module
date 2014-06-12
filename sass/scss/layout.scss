@@ -1,0 +1,434 @@
+
+/**
+ * Boilerplate for responsive webpages.
+ * Created by James Bonder. This boilerplate offers
+ * mixins that support fluid and as well as fixed
+ * grids based on the Skeleton framework.
+ */
+
+// IMPORTS
+@import "vars"; // import _global_variables.scss
+@import "mixins"; // import _mixins.scss
+
+/* SASS FUNCTIONS
+ * ------------------------------------------------ */
+
+
+
+/* Box sizing for browser compatability
+ * ------------------------------------------------ */
+*{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}	
+/* SITE STYLES
+ * ------------------------------------------------ */
+
+/*/ BANDS 
+ * ------------------------------------------------ */
+
+.band.header{
+	border-top:5px solid #303030;
+	background-color:#fff;
+	height:68px;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:100;
+	opacity:0.9;
+}
+
+section.first{
+	margin:0 auto;
+	height:97%;
+	width:100%;
+	background-color:#85c3af;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-size:cover;
+}
+
+section.first h1{
+	opacity:0.8;
+	position:relative;
+	width:100%;
+	top:89%;
+	text-align:center;
+	font-family:arial;
+	font-size:40px;
+	background-color:white;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+section.second{
+	border-top:2px solid white;
+	margin:0 auto;
+	height:100%;
+	width:100%;
+	background-color:#a29281;
+	background-size:cover;
+}
+
+section.second h1{
+	opacity:0.8;
+	position:relative;
+	width:100%;
+	top:89%;
+	text-align:center;
+		font-family:arial;
+	font-size:40px;
+	background-color:white;
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+
+
+/* HEADING
+ *------------------------------------------------- */
+
+.menuwrap{
+	text-align:center;
+}
+
+.nav{
+	line-height:63px;
+	color:#474747;
+	font-size:14px;
+}
+
+.nav a{
+	text-decoration:none;
+}
+
+.nav p{
+	font-family:helvetica;
+	color:#6B6B6B;
+	font-size:14px;
+	line-height:70px;
+}
+
+.nav p:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+.nav.menu1{
+	 -webkit-box-flex: 4; 
+	flex:4;
+	background:#303030;
+	max-width:100px;
+	min-width:80px;
+	height:63px;
+	display:none;
+}
+
+.nav.menu2{
+	flex:4;
+	background-color:white;
+	border-right:1px solid #F0F0F0;
+	border-left:1px solid #f0f0f0;
+	min-width:70px;	
+	height:63px;
+	-webkit-transition: 0.2s ease-in-out; 
+	-moz-transition: 0.2s ease-in-out; 
+	-o-transition: 0.2s ease-in-out; 
+	transition: 0.2s ease-in-out;
+}
+
+.nav.menu2:hover{
+	background-color:#303030;
+	-webkit-transition: 0.2s ease-in-out; 
+	-moz-transition: 0.2s ease-in-out; 
+	-o-transition: 0.2s ease-in-out; 
+	transition: 0.2s ease-in-out;
+	border-right:1px solid #303030;
+}
+
+.nav.menu3:hover{
+	background-color:#303030;
+	-webkit-transition: 0.2s ease-in-out; 
+	-moz-transition: 0.2s ease-in-out; 
+	-o-transition: 0.2s ease-in-out; 
+	transition: 0.2s ease-in-out;
+}
+
+.nav.menu4:hover{
+	background-color:#303030;
+	-webkit-transition: 0.2s ease-in-out; 
+	-moz-transition: 0.2s ease-in-out; 
+	-o-transition: 0.2s ease-in-out; 
+	transition: 0.2s ease-in-out;
+}
+
+.nav.menu5:hover{
+	background-color:#303030;
+	-webkit-transition: 0.2s ease-in-out; 
+	-moz-transition: 0.2s ease-in-out; 
+	-o-transition: 0.2s ease-in-out; 
+	transition: 0.2s ease-in-out;
+}
+
+.nav.menu3{
+	flex:4;
+	background-color:white;
+	border-right:1px solid #F0F0F0;
+	min-width:70px;	
+	height:63px;
+}
+
+.nav.menu4{
+	flex:4;
+	background-color:white;
+	border-right:1px solid #F0F0F0;
+	min-width:70px;	
+	height:63px;
+}
+
+.nav.menu5{
+	flex:4;
+	background-color:white;
+	border-right:1px solid #F0F0F0;	
+	min-width:70px;	
+	height:63px;
+}
+
+.nav.menu6{
+	flex:5;
+	background-color:white;
+}
+
+nav.menu{
+	display: -webkit-box;
+	display:flex;
+	height:62px;
+	width:50%;
+	margin:0 auto;
+}
+
+.main.content{
+	margin:0px 0px 0px 0px;
+	width:100%;
+	height:100%;
+}
+
+/* NAVIGATION
+ *---------------------------------------------------- */
+
+/* Footer
+ *---------------------------------------------------- */
+
+.band.footer{
+	position:absolute;
+	width:100%;
+	background-color:#000;
+}
+
+.container.foot{
+}
+
+.footer article.eight.columns p{
+	color:#fff;
+	padding-top:22px;
+}
+
+.footer section.eight.columns p{
+	color:#fff;
+	padding-top:22px;
+}
+
+.footer section.eight.columns{
+	float:right;
+	text-align:right;
+}
+
+.footer section.eight.columns a{
+	text-decoration:none;
+}
+
+/* OTHER PAGE STYLES
+ * ------------------------------------------------ */
+
+
+html{height:100%;}
+body{
+	height:100%;
+}
+
+
+
+
+/* TEXT STYLING
+ *------------------------------------------------- */
+
+h3{
+	font-family:helvetica;
+}
+
+/* MEDIA QUERIES 
+ * ------------------------------------------------ */
+ 
+@media only screen and (max-width:960px){
+	.nav.menu1{
+		display:block;
+	}
+
+	.nav.menu2{
+		max-width:120px;
+	}
+
+	.nav.menu3{
+		max-width:120px;
+	}
+
+	.nav.menu4{
+		max-width:120px;
+	}
+
+	.nav.menu5{
+		max-width:120px;
+	}
+}
+
+ @media only screen and (max-width:950px){
+	section.third h1{
+		font-size:33px;
+	}
+}
+
+@media only screen and (max-width:865px){
+	section.first h1{
+		font-size:30px;
+	}
+
+	section.second h1{
+		font-size:28px;
+	}
+}
+
+@media only screen and (max-width:750px){
+	section.second{
+		background-image:url(http://i.imgur.com/qIS61T2.jpg);
+		background-image:cover;
+	}
+
+	section.third h1{
+		font-size:25px;
+	}
+}
+
+@media only screen and (max-width:660px){
+	section.first h1{
+		font-size:25px;
+	}
+
+	section.second h1{
+		font-size:23px;
+	}
+
+	section.third h1{
+		font-size:22px;
+	}
+}
+
+@media only screen and (max-width:525px){
+	section.first h1{
+		font-size:17px;
+	}
+
+	section.second h1{
+		font-size:15px;
+	}
+
+	section.third h1{
+		font-size:16px;
+	}
+}
+
+@media only screen and (max-width:525px){
+	section.second{
+		background-image:url(http://i.imgur.com/9gy7887.jpg);
+		background-image:cover;
+	}
+}
+
+@media only screen and (max-width:400px){
+	section.second{
+		background-image:url(http://i.imgur.com/VU8tlQC.jpg);
+		background-image:cover;
+	}
+}
+
+@media only screen and (max-width:750px){
+	section.third{
+		background-image:url(http://i.imgur.com/qIS61T2.jpg);
+		background-image:cover;
+	}
+}
+
+@media only screen and (min-height:750px){
+	.wrapper.top{
+		height:96.5%;
+	}
+}
+
+@media only screen and (min-width: $baseWidthMQ) and (max-width: 1280px) {
+}
+
+/* Smaller than standard */
+@media only screen and (max-width: $baseWidthMQ - 1) {
+}
+
+/* Tablet Portrait size to standard (devices and browsers) */
+@media only screen and (min-width: $tabletWidth) and (max-width: $baseWidthMQ - 1) {
+}
+
+@media only screen and (max-width:480px){
+	nav.menu{
+		width:100%;
+	}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: $tabletWidth - 1) {
+
+	select{
+		width:90%;
+	}
+
+	.two.columns{
+		display:none;
+	}
+
+	.footer article.eight.columns{
+		text-align:center;
+	}
+
+	.footer section.eight.columns{
+		text-align:center;
+	}
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: $tabletWidth - 1) {
+
+}
+
+@media only screen and (max-width 767px){
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 960px) {
+	
+	nav.menu{
+		width:100%;
+	}	
+}
